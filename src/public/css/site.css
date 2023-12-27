@@ -180,17 +180,54 @@ select, textarea {
     font-style: italic;
 }
 
-button,
-main a.btn {
-    border: none;
-    padding: 8px;
+
+#movie-details {
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 50px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    text-decoration: none;
+}
+
+#movie-details h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#movie-details img.cube {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#movie-details .details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#movie-details p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+#movie-details p span {
+    font-weight: bold;
+}
+
+.btn {
     display: inline-block;
-    font-size: 18px;
-    width: 35%;
-    margin: 12px;
-    border-radius: 4px;
-    background: #607588;
+    padding: 10px 15px;
+    background-color: #0077cc;
     color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #005580;
 }

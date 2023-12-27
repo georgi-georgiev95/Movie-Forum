@@ -11,3 +11,5 @@ exports.getAll = () => {
     const movies = Movie.find().lean();
     return movies;
 }
+
+exports.getOne = (movieId) => Movie.findById(movieId);
