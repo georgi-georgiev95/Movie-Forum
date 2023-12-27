@@ -6,3 +6,8 @@ exports.create = async (movieData) => {
 
     return movie;
 }
+
+exports.getAll = () => {
+    const movies = Movie.find().lean();
+    return movies;
+}
