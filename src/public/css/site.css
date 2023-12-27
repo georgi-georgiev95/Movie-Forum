@@ -125,3 +125,53 @@ select, textarea {
 #add-form button:hover {
     background-color: #005580;
 }
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.movie-box {
+    max-width: 200px;
+    max-height: 500px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.movie-box img {
+    width: -webkit-fill-available;
+    min-height: auto;
+    max-height: 400px;
+    object-fit: scale-down;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.movie-box p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.genre {
+    font-style: italic;
+}
