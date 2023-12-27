@@ -15,7 +15,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -33,6 +33,12 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+nav a:hover{
+    color: orange;
 }
 
 h1 {
@@ -129,7 +135,7 @@ select, textarea {
 .movie-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -138,7 +144,7 @@ select, textarea {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin: 20px;
     overflow: hidden;
     box-sizing: border-box;
     flex-direction: column;
