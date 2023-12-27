@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Forum</title>
+    <link href="/css/site.css" type="text/css" rel="stylesheet" />
+    {{!-- <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" /> --}}
 </head>
 <body>
-    {{{body}}}
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/movies/add-movie">Add</a></li>
+                <li><a href="/movies">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        {{{body}}}
+    </section>
+    <footer>
+        <p>&copy; 2023 Movie Forum</p>
+    </footer>
 </body>
+
 </html>
