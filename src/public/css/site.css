@@ -233,7 +233,8 @@ select, textarea {
 }
 
 .btn {
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
     padding: 10px 15px;
     background-color: #0077cc;
     color: white;
@@ -245,3 +246,4 @@ select, textarea {
 .btn:hover {
     background-color: #005580;
 }
+
