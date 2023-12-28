@@ -65,6 +65,20 @@ footer {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 10%;
+    }
+
+    100% {
+        margin-left: 29%;
+    }
 }
 
 #welcome-screen h1 {
