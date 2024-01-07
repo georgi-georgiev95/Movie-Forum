@@ -3,7 +3,7 @@ const router = require('express').Router();
 const movieManager = require('../managers/movieManager');
 
 router.get('/movies/add-movie', (req, res) => {
-    res.render('add');
+    res.render('movies/add');
 });
 
 router.post('/movies/add-movie', async (req, res) => {
@@ -14,12 +14,12 @@ router.post('/movies/add-movie', async (req, res) => {
 
 router.get('/movies', async (req, res) => {
     const movies = await movieManager.getAll();
-    res.render('dashboard', { movies });
+    res.render('movies/dashboard', { movies });
 })
 
 router.get('/movies/:movieId/details', async (req, res) => {
     const movie = await movieManager.getOne(req.params.movieId).lean();
 
-    res.render('details', { movie });
+    res.render('movies/details', { movie });
 })
 module.exports = router; 
